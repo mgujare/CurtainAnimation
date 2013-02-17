@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/hello_world"
+        tools:context=".MainActivity" />
+    
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Animation" />
+	
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="260dip"
+            android:layout_height="150dip"
+            android:id="@+id/top"
+            android:src="@drawable/sunrise" />
+
+        <ImageView
+           android:layout_width="260dip"
+            android:layout_height="150dip"
+            android:layout_below="@+id/top"
+            android:id="@+id/bottom"
+            android:src="@drawable/sunrise" />
+        
+        <ImageView
+            android:layout_width="260dip"
+            android:layout_height="150dip"
+            android:id="@+id/topover"
+            android:background="@drawable/myshape"
+            />
+        
+        <ImageView
+            android:layout_width="260dip"
+            android:layout_height="150dip"
+            android:layout_below="@+id/topover"
+            android:id="@+id/bottomover"
+            android:background="@drawable/myshape" />
+       
+    </RelativeLayout>
+    
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="140dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:id="@+id/top1"
+            android:src="@drawable/sunrise" />
+     </RelativeLayout>
+        <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="140dip"
+        android:orientation="vertical" 
+        android:gravity="center_horizontal">
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_below="@+id/top1"
+            android:id="@+id/bottom1"
+            android:src="@drawable/sunrise" />
+     </RelativeLayout>
+     
+    
+</LinearLayout>
